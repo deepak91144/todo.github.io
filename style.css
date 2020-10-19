@@ -6,8 +6,7 @@
 .header {
 	background-color: blueviolet;
 	display: flex;
-
-	height: 81px;
+	height: 82px;
 	align-items: center;
 }
 .logo {
