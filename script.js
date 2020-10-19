@@ -24,7 +24,7 @@ const updateTask = (id, content) => {
 		showTask();
 		btnAdd.style.display = "";
 		btnSave.style.display = "none";
-		inputBox.value = "";
+		// inputBox.value = "";
 	});
 };
 const showTask = () => {
