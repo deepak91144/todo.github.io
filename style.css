@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header {
+	background-color: blueviolet;
+	display: flex;
+
+	height: 80px;
+	align-items: center;
+}
+.logo {
+	margin-left: 100px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.search {
+	margin-left: auto;
+	margin-right: 80px;
+}
+.search input {
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+}
+.container {
+	width: 50%;
+	min-height: 200px;
+	background-color: aquamarine;
+	box-shadow: 0 4px 8px 0;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form input {
+	border: none;
+	outline: none;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: transparent;
+}
+form input:focus {
+	background-color: white;
+}
+form button {
+	margin: 10px;
+	border: none;
+	outline: none;
+	width: 100px;
+	height: 30px;
+	background-color: violet;
+	border-radius: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+form button:hover {
+	background-color: tomato;
+	color: white;
+}
+.task-container ul {
+	padding: 10px;
+	list-style: none;
+}
+.task-container ul li {
+	display: flex;
+	padding: 15px;
+	text-transform: capitalize;
+	margin-right: 50px;
+	font-size: 20px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.task-container ul li span.ele {
+	width: 100px;
+	color: red;
+}
+.btn-con {
+	width: 100px;
+	margin-left: 100px;
+}
+@media screen and (max-width: 426px) {
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+	}
+	.header .logo {
+		margin: 10px;
+	}
+	.header .search {
+		margin: 10px;
+	}
+	.container {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.task-container {
+		margin-left: 60px;
+	}
+	.container form {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.container {
+		width: 80%;
+	}
+}
