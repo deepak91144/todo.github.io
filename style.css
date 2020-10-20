@@ -112,3 +112,53 @@ form button:hover {
 		width: 80%;
 	}
 }
+.game-con {
+	width: 500px;
+	height: 200px;
+	border: 2px solid black;
+	margin: 300px auto;
+	overflow: hidden;
+}
+.char {
+	width: 20px;
+	height: 50px;
+	background-color: brown;
+	position: relative;
+	top: 150px;
+}
+.animate {
+	animation: charr 900ms;
+}
+.hitter {
+	width: 20px;
+	height: 20px;
+	background-color: darkmagenta;
+	position: relative;
+	top: 130px;
+	left: 480px;
+	animation: hitter 1s infinite linear;
+}
+
+@keyframes charr {
+	0% {
+		top: 150px;
+	}
+
+	30% {
+		top: 80px;
+	}
+	70% {
+		top: 80px;
+	}
+	100% {
+		top: 150px;
+	}
+}
+@keyframes hitter {
+	0% {
+		left: 480px;
+	}
+	100% {
+		left: -40px;
+	}
+}
