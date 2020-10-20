@@ -60,3 +60,30 @@ const addTask = () => {
 };
 btnAdd.addEventListener("click", addTask);
 showTask();
+const char = document.getElementById("character");
+const hitter = document.getElementById("hit");
+const animate = () => {
+	if (char.classList != "animate") {
+		char.classList.add("animate");
+	}
+	setTimeout(() => {
+		char.classList.remove("animate");
+	}, 800);
+};
+window.addEventListener("click", animate);
+
+setInterval(() => {
+	const charTop = parseInt(
+		window.getComputedStyle(char).getPropertyValue("top")
+	);
+	const hit = parseInt(
+		window.getComputedStyle(hitter).getPropertyValue("left")
+	);
+	console.log(charTop);
+	console.log(hit);
+	if (hit < 20 && hit > 0 && charTop >= 130) {
+		alert("you lose");
+		char.style.animation = "none";
+		hitter.style.animation = "none";
+	}
+}, 10);
